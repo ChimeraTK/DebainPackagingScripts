@@ -38,6 +38,13 @@ if [ $# -lt 3 -o $(($#%2)) -eq 0 ]; then
   exit 1
 fi
 
+# check if config.sh exists
+echo "Checking if config.sh exists. CD: $(pwd)"
+if [ ! -f config.sh ]; then
+  echo "No config.sh found. Please define your configuration based on config.sh.TEMPLATE"
+  exit 1
+fi
+
 # check for other unfinished operations
 NEED_CLEANUP=0
 CONTINUE_BUILD=0
