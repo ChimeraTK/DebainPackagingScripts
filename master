@@ -39,7 +39,6 @@ if [ $# -lt 3 -o $(($#%2)) -eq 0 ]; then
 fi
 
 # check if config.sh exists
-echo "Checking if config.sh exists. CD: $(pwd)"
 if [ ! -f config.sh ]; then
   echo "No config.sh found. Please define your configuration based on config.sh.TEMPLATE"
   exit 1
