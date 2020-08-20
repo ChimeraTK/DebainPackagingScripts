@@ -313,6 +313,7 @@ print("Version: "+version)
 print("Epoch version: "+epoch)
 print("Distribution: "+codename)
 print("Architecture: "+arch)
+print("Debian repository: "+debianrepository)
 
 # check if we are building a doocs server
 if "doocs-bin" in hasPackages:
